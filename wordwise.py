@@ -3,7 +3,8 @@ import logging
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = "8681456340:AAExgTjjBWWK9JqxpBEmJBre0SJdBsyyQK4"
+import os
+TOKEN = os.environ.get("BOT_TOKEN", "")
 AUTHOR = "Khaled M.M. Alrantisi"
 
 logging.basicConfig(
